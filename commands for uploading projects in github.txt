@@ -1,0 +1,19 @@
+STEP 1ST :- cd "copy your project path which have been uploading on github" . # It is for access your project path.
+STEP 2ND :- git config --global user.name "Vishesh singhal"   # IT is for to ready to create your repository on github.
+STEP 3RD :-git config --global user.email "singhalvishesh56@gmail.com"
+STEP 4TH :-touch .gitignore # This is used for creating a empty git ignore file.It is basically used for ignoring the files which you not want to upload/not shown on github i.e not pushing bigger files.
+ on this empty file gave the files name which you want to not pushing on github. Use :- file name/
+STEP 5TH :- git init                # It initialised your projects and create a .git folder
+Step 6th :- git add .               # It is used for adding your files/PROJECTS on github repository..
+STEP 7TH :- git commit -m "Initial Commit"
+STEP 8TH :- git status              # Just to see
+STEP 9TH :- git remote add origin add your SSH repository url  # It is used for linking your projects content to this repository..
+STEP 10TH :- ssh-keygen -t rsa -b 4096 -C "singhalvishesh56@gmail.com"  # TO GENERATE YOUR PUBLIC KEY AND Copy your public key path that has been generated..
+STEP 11TH :- cat paste your public key path # This will give you your SSH key and add this key to your github account.
+For this go to your github setting and click on SSH and GPG and paste your SSH key.This will give access to your computer to push your projects to your repository..
+STEP 12TH :- git push origin master # For pushing your projects on github.
+
+         # How to add your current working file to existing file
+Step 1st :- git add .
+Step 2nd :-  git commit -m "Added name of file"
+Step 3rd :-  git push origin master
